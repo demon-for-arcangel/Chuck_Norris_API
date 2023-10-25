@@ -1,5 +1,3 @@
-export class Joke {}
-
 export class Categorias {
     "animal"
     "career"
