@@ -1,1 +1,1 @@
-import {}
+import { Categorias } from "./clases";
