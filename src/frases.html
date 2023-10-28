@@ -13,9 +13,11 @@
             <!-- Aquí se mostrará la frase obtenida de la API -->
         </div>
         <input type="hidden" id="categoria" value="">
-        <button onclick = "generarNuevaFrase()">Nueva Frase</button>
-        <button onclick="agregarFavorita()">Añadir a Favoritos</button>
+        <div id = "botones">
+            <button onclick = "generarNuevaFrase()">Nueva Frase</button>
+            <button onclick="agregarFavorita()">Añadir a Favoritos</button>
+            <button id = "verFavoritas">Ver Frases Favoritas</button>
+        </div>
     </body>
-<!-- <script src="/dist/frase.main.js"></script> -->    
-    <script type = "module" src = "frases.js"></script>
+    <script src="..\dist\frases.main.js"></script>    
 </html>

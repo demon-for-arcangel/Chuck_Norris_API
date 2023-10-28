@@ -51,4 +51,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (categoria) {
     generarNuevaFrase();
   }
+
+  const botonVerFavoritos = document.getElementById('verFavoritas')
+  botonVerFavoritos.addEventListener('click', () =>{
+    window.location.href = 'favoritos.html'
+  })
 });
