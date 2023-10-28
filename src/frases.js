@@ -56,4 +56,4 @@ document.addEventListener('DOMContentLoaded', () => {
   botonVerFavoritos.addEventListener('click', () =>{
     window.location.href = 'favoritos.html'
   })
-});
+})
