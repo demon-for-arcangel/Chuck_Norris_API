@@ -4,8 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <!-- las categorias deben ser enlaces en frase.html debe mostrar una llamada a la api sobre esa categoria y devolver el valor de la frase generada -->
+        <!-- Para volver a la página principal -->
+        <a href="index.html"><img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" alt=""></a>
+        <div id = "frase" value="">
+            <!-- Aquí se mostrará la frase obtenida de la API -->
+        </div>
+        <input type="hidden" id="categoria" value="">
+        <button onclick = "generarNuevaFrase()">Nueva Frase</button>
+        <button onclick="agregarFavorita()">Añadir a Favoritos</button>
     </body>
+<!-- <script src="/dist/frase.main.js"></script> -->    
+    <script type = "module" src = "frases.js"></script>
 </html>

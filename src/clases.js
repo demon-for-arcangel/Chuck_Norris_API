@@ -1,9 +1,13 @@
-export class Categorias {
-    constructor(){
-        this.categorias = ["animal", "career", "celebrity", "dev", "explicit", "fashion", "food", "history", "money", "movie", "music", "political", "religion", "science", "sport", "travel"]
+export class ChuckNorris {
+    static async getCategorias() {
+        const response = await fetch('https://api.chucknorris.io/jokes/categories');
+        const data = await response.json();
+        return data;
     }
 
-    obtenerCategoria(){
-        return this.categorias
+    static async getFrase(categoria) {
+        const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${categoria}`);
+        const data = await response.json();
+        return data.value;
     }
 }

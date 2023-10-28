@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+}
+
+#categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#categorias a {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    text-decoration: none;
+    width: 150px; /* Tamaño fijo para todas las categorías */
+    box-sizing: border-box; /* Incluye el padding en el ancho */
+
+    text-decoration: none;
+    color: inherit;
+}
+
+button  {
+    background-color: #ff6600; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al estilo de puntero */
+    border-radius: 5px; /* Bordes redondeados */
+}
+  
+button:hover {
+    background-color: #e65c00; /* Cambia el color de fondo al pasar el mouse */
+}

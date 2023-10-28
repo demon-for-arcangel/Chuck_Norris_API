@@ -4,21 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="estilos.css">
     </head>
     <body>
-        <!-- Logo proporcionado por la api -->
         <img src="https://api.chucknorris.io/img/chucknorris_logo_coloured_small@2x.png" alt="">        
-        <!-- Tabla dinámica que muestre todas las categorías a través de una llamada asíncrona -->
-        <table>
-            <thead>
-                <tr>Categorias</tr>
-            </thead>
-            <tbody>
-                <tr></tr>
+        <h2>CATEGORIAS</h2>
+        <table id = "tabla">
+            <tbody id = "categorias">
             </tbody>
         </table>
-        <!-- botón con el texto "Genérame una Frase" -->
-        <button>Aleatorio</button>
+        <button id="fraseAleatoria">Generarme una Frase</button>
+        <button id = "verFavoritas">Ver Frases Favoritas</button>
     </body>
+    <!--<script src = "/dist/index.main.js"></script> -->
     <script type = "module" src = "index.js"></script>
 </html>
